@@ -219,11 +219,16 @@ a:visited {
     .section__container {
         height: 700px;
         flex-direction: column;
+        flex-wrap: nowrap;
         align-content: center;
         justify-content: flex-start;
         padding: 80px 15px;
         scroll-margin-top: 140px;
 
+    }
+
+    .section__header-box {
+        left: 15px
     }
 
     .textwrap {
@@ -233,10 +238,13 @@ a:visited {
         font-weight: var(--h2-weight);
         font-family: var(--header-fonts);
         margin-bottom: 10px;
+        padding: 0;
     }
 
     .sample-box {
         width: 100%;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .sample-box__sample {
