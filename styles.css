@@ -1,14 +1,14 @@
 
 :root {
-    font-size: 16px;
+    font-size: 17px;
     --page-margin-left: 10px;
     --margin-zero: 0;
     --padding-zero: 0;
     --body-fonts: 'Quicksand', Arial, Helvetica, sans-serif;
     --header-fonts: 'Space Mono', monospace;
-    --h1-size: 3em;
-    --h2-size: 1.5em;
-    --p-size: 1em;
+    --h1-size: 3rem;
+    --h2-size: 1.5rem;
+    --p-size: 1rem;
     --h1-weight: 700;
     --h2-weight: 500;
     --p-weight: 400;
