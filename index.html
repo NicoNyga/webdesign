@@ -49,7 +49,7 @@
                 Kanska hevur tú sæð eitt snið tú kundi hugsa tær at eftirlíkna. <br>
                 Spyr tín forritara um uppskot um tú manglar inspiratión.
             </p>
-            <ul>
+            <ul class="desktop-only">
                 <li>Hvat slag valmynd vilt tú hava?</li>
                 <li>Skulu tað vera fleiri síður at blaða ímillum?</li>
                 <li>Skal sniðið verða serliga til teldubrúkarar ella fartelefon ella bæðið?</li>
@@ -83,12 +83,12 @@
 
             <h2>Á hesari heimasíðuni hava vit t.d. nýtt:</h2>
             <div class="sample-box__sample">
-                <p>Sjóðgrønt: hex #0E5A56</p>
-                <div class="sample-color sample-color--green"></div>
+                <p class="content--left">Sjóðgrønt: hex #0E5A56</p>
+                <div class="sample-color sample-color--green content--right"></div>
             </div>
             <div class="sample-box__sample">
-                <p>Morreytt: hex #853A12</p>
-                <div class="sample-color sample-color--brown"></div>
+                <p class="content--left">Morreytt: hex #853A12</p>
+                <div class="sample-color sample-color--brown content--right"></div>
             </div>
         </div>
     </section>
@@ -97,10 +97,10 @@
         <div class="section__header-box"><h1>Stavslag / <span class="enskt">Font</span></h1>
             </div>
         <div class="textwrap">
-            <h2>
+            <p>
                 Tak støðu til hvat slag av stavum tær dámar.
-            </h2>
-            <ul>
+            </p>
+            <ul class="desktop-only">
                 <li>Serif ella Sanserif</li>
                 <li>Formligt ella óformligt</li>
                 <li>Hátíðarligt ella stuttligt</li>
@@ -110,19 +110,19 @@
         <div class="sample-box">
             <h2>Her nýta vit:</h2>
             <div class="sample-box__sample">
-                <p>Quicksand:</p>
-                <div class="sample-text sample-text--quicksand">
+                <p class="content--left">Quicksand:</p>
+                <div class="sample-text sample-text--quicksand content--right">
                     <p class="sample-text--quicksand">Finn frætaði fimm fúlar frætar</p>
-                    <p class="sample-text--bold">Finn frætaði fimm fúlar frætar</p>
-                    <p class="sample-text--italic">Finn frætaði fimm fúlar frætar</p>
+                    <p class="sample-text--quicksand sample-text--bold">Finn frætaði fimm fúlar frætar</p>
+                    <p class="sample-text--quicksand sample-text--italic">Finn frætaði fimm fúlar frætar</p>
                 </div>
             </div>
             <div class="sample-box__sample">
-                <p>Space Mono:</p>
-                <div class="sample-tex sample-text--space-mono">
-                    <p class="">Finn frætaði fimm fúlar frætar</p>
-                    <p class="sample-text--bold">Finn frætaði fimm fúlar frætar</p>
-                    <p class="sample-text--italic">Finn frætaði fimm fúlar frætar</p>
+                <p class="content--left">Space Mono:</p>
+                <div class="sample-text sample-text--space-mono content--right">
+                    <p class="sample-text--space-mono">Finn frætaði fimm fúlar frætar</p>
+                    <p class="sample-text--space-mono sample-text--bold">Finn frætaði fimm fúlar frætar</p>
+                    <p class="sample-text--space-mono sample-text--italic">Finn frætaði fimm fúlar frætar</p>
 
                 </div>
             </div>
@@ -140,7 +140,7 @@
                 kanst tú velja hvussu stavirnir skullu sniðgevast í yvirskriftum, viðmerkingum, myndatekstir osf.
             </p>
     
-            <ul>
+            <ul class="desktop-only">
                 <li>Monospace</li>
                 <li>Stórar stavir</li>
                 <li>Lítlar stavir</li>
@@ -149,9 +149,31 @@
     
         </div>
         <div class="sample-box">
-            <div class="sample-box__sample"></div>
-            <div class="sample-box__sample"></div>
-            <div class="sample-box__sample"></div>
+            <div class="sample-box__sample">
+                <h1 class="sample-box__stavsnid--smalltext content--left">H1: Yvirskrift</h1>
+                <ul class="content--right">
+                    <li><p class="sample-box__stavsnid--smalltext">stav-tyngd: 700</p></li>
+                    <li><p class="sample-box__stavsnid--smalltext">stav-stødd: 3em</p></li>
+                    <li><p class="sample-box__stavsnid--smalltext">stav-slag: 'Space mono'</p></li>
+                </ul></div>
+            <div class="sample-box__sample">
+                <h2 class="sample-box__stavsnid--smalltext content--left">H2: Undir yvirskrift</h2>
+                <ul class="content--right">
+                    <li><p class="sample-box__stavsnid--smalltext">stav-tyngd: 500</p></li>
+                    <li><p class="sample-box__stavsnid--smalltext">stav-stødd: 1.5em</p></li>
+                    <li><p class="sample-box__stavsnid--smalltext">stav-slag: 'Space mono'</p></li>
+                </ul></div>
+            <div class="sample-box__sample">
+                <p class="sample-box__stavsnid--smalltext content--left">p: Paragraffir</p>
+                <ul class="content--right">
+                    <li><p class="sample-box__stavsnid--smalltext">stav-tyngd: 400</p></li>
+                    <li><p class="sample-box__stavsnid--smalltext">stav-stødd: 1em</p></li>
+                    <li><p class="sample-box__stavsnid--smalltext">stav-slag: 'Quicksand'</p></li>
+            </ul></div>
+    
+    
+            </div>
+            </div>
 
 
         </div>
@@ -163,8 +185,8 @@
             </div>
         <div class="textwrap">
             <p>
-                Ger eitt miðlasavn til heimaiðuna.
-                <ul>
+                Ger eitt miðlasavn til heimasíðuna.
+                <ul class="desktop-only">
                     <li>Tekstir</li>
                     <li>Myndir</li>
                     <li>Filmsbrot</li>

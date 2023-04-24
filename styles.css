@@ -6,9 +6,9 @@
     --padding-zero: 0;
     --body-fonts: 'Quicksand', Arial, Helvetica, sans-serif;
     --header-fonts: 'Space Mono', monospace;
-    --h1-size: 3rem;
-    --h2-size: 1.5rem;
-    --p-size: 1rem;
+    --h1-size: 3em;
+    --h2-size: 1.5em;
+    --p-size: 1em;
     --h1-weight: 700;
     --h2-weight: 500;
     --p-weight: 400;
@@ -61,7 +61,7 @@ a:visited {
     scroll-margin-top: 70px;
     display: flex;
     flex-wrap: wrap;
-    height: 500px;
+    height: 700px;
     justify-content: space-between;
     align-content: flex-end;
     position: relative;
@@ -80,7 +80,7 @@ a:visited {
 
 .textwrap {
     background-color: #ffffffe0;
-    font-size: 1rem;
+    font-size: var(--p-size);
     font-weight: bold;
     width: 40%;
     padding: 0 30px;
@@ -146,7 +146,7 @@ a:visited {
 .sample-box {
     display: flex;
     flex-direction: column;
-    font-size: 1rem;
+    font-size: var(--p-size);
     font-weight: bold;
     width: 40%;
     margin-bottom: 50px;
@@ -159,7 +159,7 @@ a:visited {
 .sample-box__sample {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content:space-between;
 
 }
 
@@ -176,7 +176,7 @@ a:visited {
 }
 
 .sample-text {
-    font-size: 1rem;
+    font-size: var(--p-size);
 }
 
 .sample-text--quicksand {
@@ -195,27 +195,58 @@ a:visited {
     font-style: italic;
 }
 
-@media only screen and (max-width: 1030px) {
+.sample-box__stavsnid--smalltext {
+    font-size: var(--p-size)!important;
+    margin:16px 0 0 0!important;
+}
+
+@media only screen and (max-width: 1130px) {
     body {
+        width: 100%;
         min-width: 700px;
     }
 
     .valmynd {
         min-width: 700px;
     }
+
+    .desktop-only {
+        display: none;
+    }
     .section__container {
         height: 1000px;
         flex-direction: column;
         align-content: center;
         justify-content: center;
+        padding: 0 15px;
 
     }
 
     .textwrap {
-        width: 80%;
+        width: 100%;
+        text-align: center;
+        font-size: var(--h2-size);
+        font-weight: var(--h2-weight);
+        font-family: var(--header-fonts);
     }
 
     .sample-box {
-        width: 80%;
+        width: 100%;
     }
+
+    .sample-box__sample {
+        justify-content: center;
+    }
+
+    .content--left {
+        flex: 0 1 40%;
+        text-align: right;
+        margin-right: 5px;
+    }
+
+    .content--right {
+        flex: 0 1 40%;
+        margin-right: 5px;
+    }
+
 }
